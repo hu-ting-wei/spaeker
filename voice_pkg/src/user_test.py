@@ -10,7 +10,7 @@ if __name__=='__main__':
 	rate = rospy.Rate(0.166)
 
 	while not rospy.is_shutdown():
-		counter = ['1','2','3','4','5','6','7','8','9','10']
+		counter = ['0','1','2','3','4','5','6','7','8','9','10','11','12']
 		for s in counter:
 			pub.publish(int(s))
 			rospy.loginfo(s)
